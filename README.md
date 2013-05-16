@@ -1,7 +1,7 @@
-simplerpg
+Zombie RPG
 =========
 
-The goal is to have a simple classic RPG game with all that it involves, adding one part at a time! :)
+The goal is to have a simple classic Zombiw RPG game with all that it involves, adding one part at a time! :)
 
 You can currently:
-* Move your player around the canvas.
+* Move a player around the canvas.
