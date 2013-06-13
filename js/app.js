@@ -88,7 +88,7 @@ function newPlayerSprite(sprite) {
     }
 
     // Make sure the player is moving when we change the sprite!
-    player.sprite.speed = 2;
+    player.sprite.speed = 4;
 };
 
 /**
@@ -98,28 +98,28 @@ function handleInput(dt) {
 
     if(input.isDown('DOWN') || input.isDown('s')) {
         player.pos[1] += playerSpeed * dt;
-        newPlayerSprite(new Sprite('img/syb.png', [0, 64], [32, 32], 2, [0, 1]));
+        newPlayerSprite(new Sprite('img/syb.png', [0, 64], [32, 32], 4, [0, 1]));
     }
 
     if(input.isDown('UP') || input.isDown('w')) {
         player.pos[1] -= playerSpeed * dt;
-        newPlayerSprite(new Sprite('img/syb.png', [0, 96], [32, 32], 2, [0, 1]));
+        newPlayerSprite(new Sprite('img/syb.png', [0, 96], [32, 32], 4, [0, 1]));
     }
 
     if(input.isDown('LEFT') || input.isDown('a')) {
         player.pos[0] -= playerSpeed * dt;
-        newPlayerSprite(new Sprite('img/syb.png', [0, 32], [32, 32], 2, [0, 1]));
+        newPlayerSprite(new Sprite('img/syb.png', [0, 32], [32, 32], 4, [0, 1]));
     }
 
     if(input.isDown('RIGHT') || input.isDown('d')) {
         player.pos[0] += playerSpeed * dt;
-        newPlayerSprite(new Sprite('img/syb.png', [0, 0], [32, 32], 2, [0, 1]));
+        newPlayerSprite(new Sprite('img/syb.png', [0, 0], [32, 32], 4, [0, 1]));
     }
 
     if(input.moving() == false) {
         
         if(input.somethingIsDown() == false) {
-            newPlayerSprite(new Sprite('img/syb.png', [0, 64], [32, 32], 2, [0, 1]));
+            newPlayerSprite(new Sprite('img/syb.png', [0, 64], [32, 32], 4, [0, 1]));
             player.sprite.speed = 0;
         }
 
